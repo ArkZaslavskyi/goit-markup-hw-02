@@ -2,7 +2,8 @@
   --brand-color: #2196f3;
   --text-dark-color: #212121;
   --text-light-color: #757575;
-  --dark-box-background-color: #2f303a;
+  --background-dark-box-color: #2f303a;
+  --background-light-gray-color: #f5f4fa;
 }
 
 body {
@@ -71,7 +72,7 @@ body {
   line-height: 1.36;
   /* 60px or 136% */
   color: #fff;
-  background-color: var(--dark-box-background-color);
+  background-color: var(--background-dark-box-color);
   /* Цвет фонового блока ^ */
   text-align: center;
   letter-spacing: 0.06em;
@@ -84,14 +85,17 @@ body {
   line-height: 1.87;
   /* identical to box height, 30px or 187% */
   color: #ffffff;
+  background: var(--brand-color);
+
   text-align: center;
   letter-spacing: 0.06em;
-  background: var(--brand-color);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   outline: none;
   border: none;
   padding: 10px 32px 10px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   cursor: pointer;
 }
 
@@ -179,7 +183,7 @@ body {
 /* = Footer = */
 
 .footer-section {
-  background-color: var(--dark-box-background-color);
+  background-color: var(--background-dark-box-color);
 }
 
 .footer-text {
@@ -209,7 +213,7 @@ body {
   text-align: center;
 }
 
-.portfolio-button {
+.portfolio-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -217,21 +221,18 @@ body {
 
   text-align: center;
   letter-spacing: 0.03em;
-
-  padding: 6px 22px 6px 22px;
-  color: #212121;
-  background-color: #f5f4fa;
-
-  border-radius: 4px;
-  border: none;
+  color: var(--text-dark-color);
+  background-color: var(--background-light-gray-color);
 
   outline: none;
   border: none;
-  padding: 10px 32px 10px 32px;
+  padding: 6px 22px 6px 22px;
+  border-radius: 4px;
+
   cursor: pointer;
 }
-.portfolio-button:hover,
-.portfolio-button:focus {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
   color: #ffffff;
   background-color: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
