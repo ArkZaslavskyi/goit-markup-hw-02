@@ -10,9 +10,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+address {
+  font-style: normal;
+}
+
 /* ol,
 ul {
-  font-style: normal;
   list-style-type: none;
 } */
 
